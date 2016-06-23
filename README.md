@@ -4,10 +4,11 @@ FragmentTabHost + ViewPager实现Android底部Tab，并避免Fragment之间切�
 #  首页手势引导 added by 杨小哥 (`2016-6-22 13:51:47`)
 ![效果图](http://ww2.sinaimg.cn/mw1024/c05ae6b6gw1f53yft68gbg20az0j60w5.gif)
 
-两种领导, 碎片和activity
+两种动画引导, 碎片和activity
 
 1. HomeFragment 引导
 2. YindaoActivity 引导
+
 
 > FragmentTabHost作者信息如下:
 
