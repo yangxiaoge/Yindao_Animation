@@ -64,6 +64,7 @@ public class YinDaoActivity extends AppCompatActivity {
 
         popup.showAtLocation(YinDaoActivity.this.findViewById(R.id.text), Gravity.CENTER, 0, 0);
 
+        //以下是 手势动画部分
         Animation myAnimation = AnimationUtils.loadAnimation(YinDaoActivity.this, R.anim.home_translate_ani);
         myAnimation.setRepeatCount(Integer.MAX_VALUE);
         myAnimation.setRepeatMode(Animation.RESTART);
@@ -80,8 +81,8 @@ public class YinDaoActivity extends AppCompatActivity {
 
                 // mHandler.sendMessage(message);
 
-                // popupwindow要依附于一个activity，而activity的onCreate()还没执行完，哪来的popup让你弹出来嘛。
-                // 所以加了延时
+                // popupwindow要依附于一个activity，而activity的onCreate()还没执行完，哪来的popup让你弹出来嘛。所以加了延时
+                //或者 把 popup.showAtLocation(YinDao.this.findViewById(R.id.text), Gravity.CENTER, 0, 0);这一句移出newbieGuide()方法，在控件渲染完毕后再使用
                 mHandler.sendMessageDelayed(message, 1000);
 
             }
